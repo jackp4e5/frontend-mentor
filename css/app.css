@@ -45,9 +45,16 @@ body{
     text-align: center;
     background-color: white;
 }
+@media( min-width: 767px){
+    .main__card{
+        width: 28rem;
+    }
+
+        
+}
 
 .contents{
-    padding: 2rem;
+    padding: 3rem;
 }
 
 .contents__image{
@@ -55,16 +62,19 @@ body{
 }
 
 .contents__headin{
+    margin-top: 0;
     font-weight: 900;
     color: var(--primary2);
 }
 
 .contents__text{
+    font-size: 17px;
     color: var(--secundary2);
-    line-height: 1.8;
+    line-height: 1.6;
 }
 
 .price{
+    padding: 1rem;
     display: flex;
     align-items: center;
     justify-content: space-around;
