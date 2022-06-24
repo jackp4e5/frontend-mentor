@@ -1,0 +1,132 @@
+
+:root{
+    --font-size: 16px;
+    --font-family: 'Red Hat Display', sans-serif;;
+
+    
+    --background: hsl(225, 100%, 94%);
+    --blue-color: hsl(245, 75%, 52%);
+
+
+    --primary2: hsl(223, 47%, 23%);
+    --secundary2:hsl(224, 23%, 55%);
+    --blue2: hsl(225, 100%, 98%);
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62,5%;
+}
+*,*:before,*:after{
+    box-sizing: inherit;
+}
+
+body{
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: var(--background);
+    font-family: var( --font-family);
+}
+
+ .main{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 100vw;
+     height: 100vh;
+} 
+
+.main__card{
+    width: 26rem;
+    max-width: 90vw;
+    overflow: hidden;
+    border-radius: 2rem;
+    text-align: center;
+    background-color: white;
+}
+
+.contents{
+    padding: 2rem;
+}
+
+.contents__image{
+   width: 100%;
+}
+
+.contents__headin{
+    font-weight: 900;
+    color: var(--primary2);
+}
+
+.contents__text{
+    color: var(--secundary2);
+    line-height: 1.8;
+}
+
+.price{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+    margin: 0 auto;
+    background-color: var(--blue2);
+    border-radius: .5rem;
+}
+
+.price__flex{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.price__annual{
+    font-weight: 900;
+    color: var(--primary2);
+}
+.price__span{
+    display: block;
+    font-weight: 400;
+    color: var(--secundary2);
+}
+.price__link{
+    font-weight: 900;
+    color: var(--blue-color);
+    cursor: pointer;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.buttons button{
+    border-radius: .8rem;
+    cursor:pointer;
+    padding: 1rem;
+    font-weight: 700;
+    font-size: 1rem;
+    border: none;
+    transition: transform .3s;
+}
+
+.buttons__firts{
+    margin-top: 2rem ;
+    color: var(--blue2);
+    background-color: var(--blue-color);
+    box-shadow: 10px 7px 29px -5px  rgba(30 30 134 /.5); 
+}
+
+.buttons__second{
+    background-color:transparent;
+    color: var(--secundary2);
+}
+
+.buttons__firts:hover,
+.buttons__second:hover{
+    transform: scale(1.1);
+    
+}
+
+
+
