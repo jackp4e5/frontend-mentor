@@ -54,7 +54,12 @@ body{
 }
 
 .contents{
-    padding: 3rem;
+    padding: 1.5rem;
+}
+@media( min-width: 767px){
+    .contents{
+        padding: 3rem;
+    } 
 }
 
 .contents__image{
@@ -89,6 +94,7 @@ body{
     align-items: center;
     gap: 1rem;
 }
+
 .price__annual{
     font-weight: 900;
     color: var(--primary2);
