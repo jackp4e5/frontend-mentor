@@ -38,53 +38,45 @@ body{
 } 
 
 .main__card{
-    width: 26rem;
+    width: 23rem;
     max-width: 90vw;
     overflow: hidden;
     border-radius: 2rem;
     text-align: center;
     background-color: white;
-}
-@media( min-width: 767px){
-    .main__card{
-        width: 28rem;
-    }
+}     
 
-        
-}
 
 .contents{
     padding: 1.5rem;
 }
-@media( min-width: 767px){
-    .contents{
-        padding: 3rem;
-    } 
-}
 
 .contents__image{
    width: 100%;
+   display: block;
 }
 
 .contents__headin{
     margin-top: 0;
     font-weight: 900;
     color: var(--primary2);
+    font-size: 1.4rem;
 }
 
 .contents__text{
     font-size: 17px;
     color: var(--secundary2);
     line-height: 1.6;
+    margin-top: 0;
+    font-size: .95rem;
 }
 
 .price{
-    padding: 1rem;
+    padding: .3rem;
     display: flex;
     align-items: center;
     justify-content: space-around;
     gap: 1rem;
-    margin: 0 auto;
     background-color: var(--blue2);
     border-radius: .5rem;
 }
@@ -113,13 +105,14 @@ body{
 .buttons{
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: .8rem;
 }
 
 .buttons button{
     border-radius: .8rem;
     cursor:pointer;
-    padding: 1rem;
+    padding: .7rem;
+    font-family: var(--font-family);
     font-weight: 700;
     font-size: 1rem;
     border: none;
@@ -127,7 +120,7 @@ body{
 }
 
 .buttons__firts{
-    margin-top: 2rem ;
+    margin-top: 1.2rem ;
     color: var(--blue2);
     background-color: var(--blue-color);
     box-shadow: 10px 7px 29px -5px  rgba(30 30 134 /.5); 
